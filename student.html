@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport"content="width=device-width,initial-scale=1.0">
+   <title>Student</title>
+</head>
+
+   <body>
+
+<script>
+
+function Student(name, address, phone, course) 
+{
+this.name=name;
+this.address=address;
+this.phone=phone;
+this.course=course;
+
+this.getinfo=function(){return "Name:"+this.name +"\n"+ "Address:"+
+this.address + "\n"+
+"Phone:"+this.phone +"\n"+ "Course:"+this.course }
+
+}
+ var Student1=new Student ("Maja Mitrovic","Pohorska", 064-123-568,"History");
+ var Student2=new Student ("Milica Petrovic","Pohorska", 064-134-456,"History"); 
+ var Student3=new Student ("Marina Jovic","Pohorska", 064-233-542,"History");
+
+ console.log(Student1.getinfo());
+ console.log(Student2.getinfo()); 
+ console.log(Student3.getinfo());
+
+
+
+</script>
+
+</body>
+
+</html>
